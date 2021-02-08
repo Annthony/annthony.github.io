@@ -18,6 +18,7 @@
 
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/blue.css" id="theme-color">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -36,11 +37,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#about">About Me</a>
-                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="./docs/AnthonyResume2021.pdf">Resume</a>
+                            <a class="nav-link page-scroll" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#work">My Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" target="_blank"
+                                href="./docs/AnthonyResume2021.pdf">Resume</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link page-scroll" href="https://www.linkedin.com/in/annthony/">Linkedin</a>
@@ -58,30 +63,247 @@
                 <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
                     <h1 class="heading-black text-capitalize">Hello</h1>
                     <p class="lead py-3">I am a software developer.</p>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- features section -->
-    <!-- <section class="py-7 bg-dark section-angle top-right bottom-right" id="about">
+    <section class="py-7 bg-dark section-angle top-right bottom-right" id="about">
         <div class="container">
             <div class="row mt-6">
                 <div class="col-md-6 mr-auto">
                     <h2>Me</h2>
-                    <p class="mb-5">I graduated from Western University in 2020 with a Specialization in Computer
+                    <p class="mb-3">I graduated from Western University in 2020 with a Specialization in Computer
                         Science.</p>
+                    <p class="mb-3">When I'm not behind the screen, you could find me fencing, playing badminton,
+                        snowboarding, rock-climbing, shooting photos, on the rift, or binging TV shows (before
+                        quarantine of course). Nowadays, it's mostly the last two.
+                    </p>
                 </div>
                 <div class="col-md-5">
+                    <!-- image flipper -->
                     <div class="slick-about">
-                        <img src="img/blog-1.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 1" />
-                        <img src="img/blog-2.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 2" />
-                        <img src="img/blog-3.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 3" />
+                        <img src="img/headshot.jpg" class="img-fluid rounded d-block mx-auto"
+                            alt="Anthony's headshot" />
+                        <img src="img/me-fencing.jpg" class="img-fluid rounded d-block mx-auto" alt="Anthony fencing" />
+                        <img src="img/me-badminton.jpg" class="img-fluid rounded d-block mx-auto"
+                            alt="Anthony badminton" />
+                        <img src="img/me-photographing.jpg" class="img-fluid rounded d-block mx-auto"
+                            alt="Anthony taking a photo" />
+                        <img src="img/me-bouldering.jpg" class="img-fluid rounded d-block mx-auto"
+                            alt="Anthony rock climbing" />
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
+    <!-- My work section-->
+    <section class="pt-6 pb-7" id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h2 class="heading-black">My Work</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <a target="_blank" href="https://limpark.co/">
+                            <img class="card-img-top img-raised" src="img/limpark-preview.jpg" alt="LimPark Website">
+                        </a>
+                        <div class="card-body">
+                            <a href="#" class="card-title mb-2">
+                                <h5>LimPark&trade;</h5>
+                            </a>
+                            <p class="text-muted small-xl mb-2">Jan 2020 - Current</p>
+                            <p class="card-text">Front-end developer for the LimPark website.
+                                (Userfrosting (PHP), HTML, CSS, JS, next iteration in React)</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted float-right"><a class="page-scroll" href="#work-desc"
+                                    data-toggle="collapse" data-target="#collapseLimPark">Learn
+                                    more</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <a target="_blank" href="https://www.miistro.com/">
+                            <img class="card-img-top img-raised" src="img/miistro-preview.jpg" alt="Miistro">
+                        </a>
+                        <div class="card-body">
+                            <a href="#" class="card-title mb-2">
+                                <h5>Miistro</h5>
+                            </a>
+                            <p class="text-muted small-xl mb-2">May 2018 - Sept 2019</p>
+                            <p class="card-text">Back end developer for the Miistro web app. (Laravel (PHP), SQL,
+                                Docker, Stripe, some React)</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted float-right"><a class="page-scroll" href="#work-desc"
+                                    data-toggle="collapse" data-target="#collapseMiistro">Learn more</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <a target="_blank" href="http://ec2-3-96-169-135.ca-central-1.compute.amazonaws.com/">
+                            <img class="card-img-top img-raised" src="img/moo-preview.jpg" alt="Project moo">
+                        </a>
+                        <div class="card-body">
+                            <a href="#" class="card-title mb-2">
+                                <h5>Project moo</h5>
+                            </a>
+                            <p class="text-muted small-xl mb-2">June 2020 - Current</p>
+                            <p class="card-text">Developing a complete web app for appointment booking. (Django
+                                (Python), HTML, CSS, JS)</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted float-right"><a class="page-scroll" href="#work-desc"
+                                    data-toggle="collapse" data-target="#collapseProjectMoo">Learn more</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work description section -->
+    <section class="py-7 bg-dark section-angle top-right bottom-right" id="work-desc">
+        <div class="container">
+            <div id="accordion">
+                <div class="card mb-1">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseLimPark"
+                                aria-expanded="true" aria-controls="collapseLimPark">
+                                LimPark&trade;
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseLimPark" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5>About LimPark&trade;</h5>
+                            <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod.
+                            </p>
+                            <h5>My Role</h5>
+                            <p>
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                assumenda shoreditch et.
+                            </p>
+                            <h5>My Responsibilities</h5>
+                            <p>
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher
+                                vice lomo.
+                            </p>
+                            <h5>Challenges</h5>
+                            <p>
+                                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </p>
+                            <h5>Key Takeaways</h5>
+                            <ul>
+                                <li>Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
+                                    consectetur adipiscing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-1">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseMiistro"
+                                aria-expanded="false" aria-controls="collapseMiistro">
+                                Miistro
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseMiistro" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <h5>About LimPark&trade;</h5>
+                            <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod.
+                            </p>
+                            <h5>My Role</h5>
+                            <p>
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                assumenda shoreditch et.
+                            </p>
+                            <h5>My Responsibilities</h5>
+                            <p>
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher
+                                vice lomo.
+                            </p>
+                            <h5>Challenges</h5>
+                            <p>
+                                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </p>
+                            <h5>Key Takeaways</h5>
+                            <ul>
+                                <li>Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
+                                    consectetur adipiscing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-1">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                data-target="#collapseProjectMoo" aria-expanded="false"
+                                aria-controls="collapseProjectMoo">
+                                Project moo
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseProjectMoo" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <h5>About LimPark&trade;</h5>
+                            <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod.
+                            </p>
+                            <h5>My Role</h5>
+                            <p>
+                                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                assumenda shoreditch et.
+                            </p>
+                            <h5>My Responsibilities</h5>
+                            <p>
+                                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident. Ad vegan excepteur butcher
+                                vice lomo.
+                            </p>
+                            <h5>Challenges</h5>
+                            <p>
+                                Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                probably haven't heard of them accusamus labore sustainable VHS.
+                            </p>
+                            <h5>Key Takeaways</h5>
+                            <ul>
+                                <li>Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
+                                    consectetur adipiscing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--scroll to top-->
     <div class="scroll-top">
@@ -96,5 +318,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
+</html>
 
 </html>
